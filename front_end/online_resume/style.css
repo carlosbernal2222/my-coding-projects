@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General styles */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px #24a1e5
+}
+
+a {
+    text-decoration: none;
+    color: #24a1e5;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #222;
+    border-bottom: 1px solid #ced3d7;
+}
+
+header h1 {
+    color: #24a1e5;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav {
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header .profile {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+header div {
+    color: #24a1e5;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+header aside {
+    font-size: 0.9rem;
+}
+
+header aside ul {
+    list-style-type: none;
+    color: #24a1e5;
+}
+
+header aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsiveness */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        order: 1;
+    }
+
+    header .profile {
+        order: 2;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    header div {
+        order: 3;
+    }
+
+    header aside {
+        order: 4;
+        margin-left: 1rem;
+    }
+
+    header nav ul li {
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header nav ul li {
+        margin-right: 2rem;
+    }
+}
